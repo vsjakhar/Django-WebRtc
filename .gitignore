@@ -6,5 +6,5 @@ __pycache__
 *.sqlite3
 debug-error.log
 *media/
-*static/
+# *static/
 nohup.out
