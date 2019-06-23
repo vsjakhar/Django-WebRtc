@@ -1,3 +1,4 @@
+aioredis==1.2.0
 asgiref==3.1.2
 asn1crypto==0.24.0
 async-timeout==3.0.1
@@ -6,13 +7,16 @@ autobahn==19.6.2
 Automat==0.7.0
 cffi==1.12.3
 channels==2.2.0
+channels-redis==2.4.0
 constantly==15.1.0
 cryptography==2.7
 daphne==2.3.0
 Django==2.2.2
+hiredis==1.0.0
 hyperlink==19.0.0
 idna==2.8
 incremental==17.5.0
+msgpack==0.6.1
 pycparser==2.19
 PyHamcrest==1.9.0
 pytz==2019.1
