@@ -25,7 +25,7 @@ SECRET_KEY = '9tl5lf6rrv$zv59daik)l(@+=fqubt&4wc3b^jq&wbg!wi5z)-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -53,7 +53,6 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'webrtc.urls'
-ASGI_APPLICATION = 'webrtc.routing.application'
 
 TEMPLATES = [
 	{
@@ -125,3 +124,14 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR,'static/')
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# Django Channels Setting
+ASGI_APPLICATION = 'webrtc.routing.application'
+CHANNEL_LAYERS = {
+	'default': {
+		'BACKEND': 'channels_redis.core.RedisChannelLayer',
+		'CONFIG': {
+			"hosts": [('127.0.0.1', 6379)],
+		},
+	},
+}
