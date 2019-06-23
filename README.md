@@ -101,6 +101,12 @@ After Running Redis Server you can Install redis for Channels with This Command
 
 	pip3 install channels_redis
 
+## Django Channels Setup
+	pip3 install -U channels
+
+Create a routing.py file in Project Directory
+Add ASGI_APPLICATION into your settings.py file
+
 # Heroku Setup
 
 ## Install the Heroku CLI
