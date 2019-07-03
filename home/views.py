@@ -15,3 +15,6 @@ def video3(request):
 
 def video5(request):
 	return render(request,'video5.html')
+
+def video6(request):
+	return render(request,'video6.html')
