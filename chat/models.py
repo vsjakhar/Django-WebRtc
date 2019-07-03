@@ -39,8 +39,8 @@ class ChatMessage(models.Model):
 	def __str__(self):
 		return str(self.user)+" => "+str(self.message)
 
-def users_changed(sender, **kwargs):
-	if kwargs['instance'].users.count() < 2:
-		raise ValidationError("You can't assign more than two users")
+# def users_changed(sender, **kwargs):
+# 	if kwargs['instance'].users.count() < 2:
+# 		raise ValidationError("You can't assign less than two users")
 
-m2m_changed.connect(users_changed, sender=Room.users.through)
+# m2m_changed.connect(users_changed, sender=Room.users.through)
