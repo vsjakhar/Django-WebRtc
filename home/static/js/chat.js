@@ -9,8 +9,10 @@ var chatSocket = new WebSocket(
 
 chatSocket.onmessage = function(e) {
 	var data = JSON.parse(e.data);
-	var message = data['message'];
-	document.querySelector('#chat-log').value += (message + '\n');
+	// var message = data['message'];
+	// document.querySelector('#chat-log').value += (message + '\n');
+	// document.querySelector('#chat-log').append('<li>'+message+'</li>');
+	$('#chat-log').append('<li><span>'+data['user']+'</span> '+data['message']+'</li>');
 };
 
 chatSocket.onclose = function(e) {

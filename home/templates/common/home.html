@@ -28,7 +28,12 @@
 					</div>
 				</section>
 				<section class="col-md-4 chat">
-					<textarea id="chat-log" cols="55" rows="20"></textarea><br/>
+					<ul id="chat-log">
+						{% for cht in chat %}
+							<li><span>{{cht.user}}</span> {{cht.message}}</li>
+						{% endfor %}
+					</ul>
+					<!-- <textarea cols="55" rows="20"></textarea><br/> -->
 					<input id="chat-message-input" type="text" size="56"/>
 					<input id="chat-message-submit" type="button" value="Send"/>
 				</section>

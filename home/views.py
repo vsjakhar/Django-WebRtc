@@ -1,9 +1,11 @@
 from django.shortcuts import render
+from chat.models import *
 
 # Create your views here.
 
 def home(request):
-	return render(request,'common/home.html')
+	chat = ChatMessage.objects.all()
+	return render(request,'common/home.html', {'chat':chat})
 
 def video(request):
 	return render(request,'video.html')

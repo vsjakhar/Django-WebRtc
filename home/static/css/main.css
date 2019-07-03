@@ -6,4 +6,7 @@ video {
   max-width: 100%;
   width: 320px;
 }
+#chat-log{padding: 0; min-height: 450px; overflow: scroll;}
+#chat-log li{list-style: none;}
+#chat-log li span{background-color: #ccc; padding: 2px 5px; border-radius: 7px;}
 .chat{border-left: 1px solid #ccc;}
