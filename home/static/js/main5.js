@@ -61,6 +61,7 @@ var roomName = 'st';
 var ws = 'ws://';
 if(window.location.protocol=="https:"){ ws = 'wss://'; }
 var chatSocket = new WebSocket(ws + window.location.host + '/ws/chat/' + roomName + '/');
+// var chatSocket = new WebSocket("ws://139.59.66.2:7654/ws/chat/st/");
 // console.log(chatSocket);
 
 ////////////////////////////////////////////////
