@@ -4,7 +4,9 @@ Video and Audio Calling with WebRtc in Django
 ## Create Virtualenv with Python3
 	virtualenv virtual/webrtc -p python3
 	
-
+## Insatll Modules with pip3 from requirements.txt file
+	pip3 install -r requirements.txt
+### or
 ## Install Django and all Modules with pip3
 	pip3 install django
 	django-admin startproject webrtc
@@ -20,6 +22,7 @@ Video and Audio Calling with WebRtc in Django
 	pip3 install fcm_django
 	pip3 install mysqlclient
 	LDFLAGS=-L/usr/local/opt/openssl/lib pip install mysqlclient
+
 
 ## Update requirements.txt file
 	pip3 freeze > requirements.txt
