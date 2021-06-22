@@ -10,6 +10,9 @@ def home(request):
 def video(request):
 	return render(request,'video.html')
 
+def video2(request):
+	return render(request,'video2.html')
+
 def video3(request):
 	return render(request,'video3.html')
 
@@ -21,3 +24,6 @@ def video6(request):
 
 def call(request):
 	return render(request,'final.html')
+
+def live(request):
+	return render(request,'live.html')
