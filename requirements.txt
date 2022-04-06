@@ -24,6 +24,6 @@ pytz==2021.1
 service-identity==21.1.0
 six==1.16.0
 sqlparse==0.4.1
-Twisted==21.2.0
+Twisted==22.2.0
 txaio==21.2.1
 zope.interface==5.4.0
