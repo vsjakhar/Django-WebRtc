@@ -11,6 +11,7 @@ constantly==15.1.0
 cryptography==3.4.7
 daphne==3.0.2
 Django==3.2.4
+gunicorn
 hiredis==2.0.0
 hyperlink==21.0.0
 idna==3.2
