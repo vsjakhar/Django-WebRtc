@@ -168,4 +168,4 @@ If you haven't already, log in to your Heroku account and follow the prompts to 
 	heroku logs --tail
 
 ###Thanks for Reading...###
-# Happy Coading!!! #
+# Happy Coding!!! #
